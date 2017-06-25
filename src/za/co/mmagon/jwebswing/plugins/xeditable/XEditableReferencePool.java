@@ -16,7 +16,7 @@ enum XEditableReferencePool implements ReferencePool
     XEditable(new JavascriptReference("XEditable", 1.6, "bower_components/x-editable/dist/bootstrap3-editable/js/bootstrap-editable.js"),
             new CSSReference("XEditable", 1.6, "bower_components/x-editable/dist/bootstrap3-editable/css/bootstrap-editable.css")),
     XEditableTypeAhead(new JavascriptReference("XEditableTypeAhead", 1.6, "bower_components/x-editable/dist/inputs-ext/typeaheadjs/lib/typeahead.js"),
-            new CSSReference("XEditableTypeAhead", 1.5, "bower_components/x-editable/dist/inputs-ext/typeaheadjs/lib/typeahead.js-bootstrap.css")),
+            new CSSReference("XEditableTypeAhead", 1.6, "bower_components/x-editable/dist/inputs-ext/typeaheadjs/lib/typeahead.js-bootstrap.css")),
     XEditableTypeAheadJS(new JavascriptReference("XEditableTypeAheadJS", 1.6, "bower_components/x-editable/dist/inputs-ext/typeaheadjs/typeaheadjs.js"),
             null),;
     /**

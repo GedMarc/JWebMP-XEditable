@@ -16,7 +16,8 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 @ComponentInformation(name = "XEditable Core Component",
         description = "The core XEditable Components",
         url = "https://vitalets.github.io/x-editable/docs.html")
-public class XEditable<O extends XEditableOptions> extends Link<XEditable>
+public class XEditable<O extends XEditableOptions<O>>
+        extends Link<XEditable<O>>
 {
 
     private static final long serialVersionUID = 1L;

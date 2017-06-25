@@ -10,7 +10,8 @@ import za.co.mmagon.jwebswing.base.html.Link;
  *
  * @since 13 Jun 2017
  */
-public class XEditableFeature<O extends XEditableOptions> extends Feature<O, XEditableFeature>
+public class XEditableFeature<O extends XEditableOptions<O>>
+        extends Feature<O, XEditableFeature<O>>
 {
 
     private static final long serialVersionUID = 1L;
