@@ -14,19 +14,19 @@ import za.co.mmagon.jwebswing.plugins.xeditable.options.XEditableTextAreaOptions
  * @since 13 Jun 2017
  */
 @ComponentInformation(name = "XEditable Text Area Component",
-        description = "The Text Area XEditable Component",
-        url = "https://vitalets.github.io/x-editable/docs.html#textarea")
+		description = "The Text Area XEditable Component",
+		url = "https://vitalets.github.io/x-editable/docs.html#textarea")
 public class XEditableTextArea extends XEditable<XEditableTextAreaOptions>
 {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    /*
-     * Constructs a new XEditableText
-     */
-    public XEditableTextArea()
-    {
-        getFeature().setOptions(new XEditableTextAreaOptions());
-    }
+	/*
+	 * Constructs a new XEditableText
+	 */
+	public XEditableTextArea()
+	{
+		getFeature().setOptions(new XEditableTextAreaOptions());
+	}
 
 }

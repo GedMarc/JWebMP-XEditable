@@ -14,19 +14,19 @@ import za.co.mmagon.jwebswing.plugins.xeditable.options.XEditableComboDateOption
  * @since 13 Jun 2017
  */
 @ComponentInformation(name = "XEditable Combo Date Component",
-        description = "The Combo Date XEditable Component",
-        url = "https://vitalets.github.io/x-editable/docs.html#combodate")
+		description = "The Combo Date XEditable Component",
+		url = "https://vitalets.github.io/x-editable/docs.html#combodate")
 public class XEditableComboDate extends XEditable<XEditableComboDateOptions>
 {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    /*
-     * Constructs a new XEditableText
-     */
-    public XEditableComboDate()
-    {
-        getFeature().setOptions(new XEditableComboDateOptions());
-    }
+	/*
+	 * Constructs a new XEditableText
+	 */
+	public XEditableComboDate()
+	{
+		getFeature().setOptions(new XEditableComboDateOptions());
+	}
 
 }

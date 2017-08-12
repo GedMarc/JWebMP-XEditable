@@ -17,6 +17,6 @@
     "tests"
   ],
   "dependencies": {
-		"x-editable": "#d66840a"
+    "x-editable": "#d66840a"
   }
 }

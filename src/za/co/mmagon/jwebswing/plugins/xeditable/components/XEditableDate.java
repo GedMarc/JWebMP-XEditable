@@ -14,19 +14,19 @@ import za.co.mmagon.jwebswing.plugins.xeditable.options.XEditableDateOptions;
  * @since 13 Jun 2017
  */
 @ComponentInformation(name = "XEditable Date Component",
-        description = "The JQuery UI Date XEditable Component",
-        url = "https://vitalets.github.io/x-editable/docs.html#textarea")
+		description = "The JQuery UI Date XEditable Component",
+		url = "https://vitalets.github.io/x-editable/docs.html#textarea")
 public class XEditableDate extends XEditable<XEditableDateOptions>
 {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    /*
-     * Constructs a new XEditableText
-     */
-    public XEditableDate()
-    {
-        getFeature().setOptions(new XEditableDateOptions());
-    }
+	/*
+	 * Constructs a new XEditableText
+	 */
+	public XEditableDate()
+	{
+		getFeature().setOptions(new XEditableDateOptions());
+	}
 
 }

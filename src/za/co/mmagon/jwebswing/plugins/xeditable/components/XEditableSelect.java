@@ -14,19 +14,19 @@ import za.co.mmagon.jwebswing.plugins.xeditable.options.XEditableSelectOptions;
  * @since 13 Jun 2017
  */
 @ComponentInformation(name = "XEditable Select Component",
-        description = "The Select Drop Down XEditable Component",
-        url = "https://vitalets.github.io/x-editable/docs.html#textarea")
+		description = "The Select Drop Down XEditable Component",
+		url = "https://vitalets.github.io/x-editable/docs.html#textarea")
 public class XEditableSelect extends XEditable<XEditableSelectOptions>
 {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    /*
-     * Constructs a new XEditableText
-     */
-    public XEditableSelect()
-    {
-        getFeature().setOptions(new XEditableSelectOptions());
-    }
+	/*
+	 * Constructs a new XEditableText
+	 */
+	public XEditableSelect()
+	{
+		getFeature().setOptions(new XEditableSelectOptions());
+	}
 
 }
