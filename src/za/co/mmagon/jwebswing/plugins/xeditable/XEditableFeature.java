@@ -27,7 +27,6 @@ public class XEditableFeature<O extends XEditableOptions<O>>
 	protected void assignFunctionsToComponent()
 	{
 		addQuery(getComponent().getJQueryID() + "editable(" + getOptions() + ");");
-		super.assignFunctionsToComponent();
 	}
 	
 	@Override

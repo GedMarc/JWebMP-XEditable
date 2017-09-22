@@ -29,19 +29,20 @@ enum XEditableReferencePool implements ReferencePool
 	/**
 	 * A new AngularSlimScrollReferencePool
 	 */
-	private XEditableReferencePool()
+	XEditableReferencePool()
 	{
 
 	}
+
 	/**
 	 * A new AngularSlimScrollReferencePool with data
 	 */
-	private XEditableReferencePool(String data)
+	XEditableReferencePool(String data)
 	{
 
 	}
-
-	private XEditableReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference)
+	
+	XEditableReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference)
 	{
 		this.javaScriptReference = javaScriptReference;
 		if (this.javaScriptReference != null)

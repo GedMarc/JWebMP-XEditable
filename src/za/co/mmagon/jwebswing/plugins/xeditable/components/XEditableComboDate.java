@@ -18,9 +18,9 @@ import za.co.mmagon.jwebswing.plugins.xeditable.options.XEditableComboDateOption
 		url = "https://vitalets.github.io/x-editable/docs.html#combodate")
 public class XEditableComboDate extends XEditable<XEditableComboDateOptions>
 {
-
+	
 	private static final long serialVersionUID = 1L;
-
+	
 	/*
 	 * Constructs a new XEditableText
 	 */
@@ -28,5 +28,5 @@ public class XEditableComboDate extends XEditable<XEditableComboDateOptions>
 	{
 		getFeature().setOptions(new XEditableComboDateOptions());
 	}
-
+	
 }

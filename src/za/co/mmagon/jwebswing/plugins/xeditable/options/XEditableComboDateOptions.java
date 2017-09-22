@@ -13,7 +13,7 @@ import za.co.mmagon.jwebswing.plugins.xeditable.options.items.ComboDateOptions;
  */
 public class XEditableComboDateOptions extends XEditableOptions<XEditableComboDateOptions>
 {
-
+	
 	private static final long serialVersionUID = 1L;
 	/**
 	 * Text shown as clear date button. If false clear button will not be rendered.
@@ -24,7 +24,7 @@ public class XEditableComboDateOptions extends XEditableOptions<XEditableComboDa
 	 */
 	@JsonProperty("combodate")
 	private ComboDateOptions comboDate;
-
+	
 	/**
 	 * If true - html will be escaped in content of element via $.text() method.
 	 * <p>
@@ -37,13 +37,13 @@ public class XEditableComboDateOptions extends XEditableOptions<XEditableComboDa
 	 * Format used for sending value to server. Also applied when converting date from data-value attribute.
 	 */
 	private String format;
-
+	
 	/**
 	 * CSS class automatically applied to input
 	 */
 	@JsonProperty("inputclass")
 	private String inputClass;
-
+	
 	/**
 	 * HTML template of input. Normally you should not change it.
 	 */
@@ -54,7 +54,7 @@ public class XEditableComboDateOptions extends XEditableOptions<XEditableComboDa
 	 */
 	@JsonProperty("viewformat")
 	private String viewFormat;
-
+	
 	/**
 	 * Constructs a new date
 	 */
@@ -62,7 +62,7 @@ public class XEditableComboDateOptions extends XEditableOptions<XEditableComboDa
 	{
 		setType(XEditableDataTypes.DateUi);
 	}
-
+	
 	/**
 	 * Text shown as clear date button. If false clear button will not be rendered.
 	 *
@@ -72,7 +72,7 @@ public class XEditableComboDateOptions extends XEditableOptions<XEditableComboDa
 	{
 		return clear;
 	}
-
+	
 	/**
 	 * Text shown as clear date button. If false clear button will not be rendered.
 	 *
@@ -85,7 +85,7 @@ public class XEditableComboDateOptions extends XEditableOptions<XEditableComboDa
 		this.clear = clear;
 		return this;
 	}
-
+	
 	/**
 	 * Configuration of datepicker. Full list of options: http://api.jqueryui.com/datepicker
 	 *
@@ -95,7 +95,7 @@ public class XEditableComboDateOptions extends XEditableOptions<XEditableComboDa
 	{
 		return comboDate;
 	}
-
+	
 	/**
 	 * Configuration of datepicker. Full list of options: http://api.jqueryui.com/datepicker
 	 *
@@ -108,7 +108,7 @@ public class XEditableComboDateOptions extends XEditableOptions<XEditableComboDa
 		this.comboDate = datepicker;
 		return this;
 	}
-
+	
 	/**
 	 * If true - html will be escaped in content of element via $.text() method.
 	 * <p>
@@ -122,7 +122,7 @@ public class XEditableComboDateOptions extends XEditableOptions<XEditableComboDa
 	{
 		return escape;
 	}
-
+	
 	/**
 	 * If true - html will be escaped in content of element via $.text() method.
 	 * <p>
@@ -139,7 +139,7 @@ public class XEditableComboDateOptions extends XEditableOptions<XEditableComboDa
 		this.escape = escape;
 		return this;
 	}
-
+	
 	/**
 	 * Format used for sending value to server. Also applied when converting date from data-value attribute.
 	 *
@@ -149,7 +149,7 @@ public class XEditableComboDateOptions extends XEditableOptions<XEditableComboDa
 	{
 		return format;
 	}
-
+	
 	/**
 	 * Format used for sending value to server. Also applied when converting date from data-value attribute.
 	 *
@@ -162,7 +162,7 @@ public class XEditableComboDateOptions extends XEditableOptions<XEditableComboDa
 		this.format = format;
 		return this;
 	}
-
+	
 	/**
 	 * CSS class automatically applied to input
 	 *
@@ -172,7 +172,7 @@ public class XEditableComboDateOptions extends XEditableOptions<XEditableComboDa
 	{
 		return inputClass;
 	}
-
+	
 	/**
 	 * CSS class automatically applied to input
 	 *
@@ -185,7 +185,7 @@ public class XEditableComboDateOptions extends XEditableOptions<XEditableComboDa
 		this.inputClass = inputClass;
 		return this;
 	}
-
+	
 	/**
 	 * HTML template of input. Normally you should not change it.
 	 *
@@ -195,7 +195,7 @@ public class XEditableComboDateOptions extends XEditableOptions<XEditableComboDa
 	{
 		return template;
 	}
-
+	
 	/**
 	 * HTML template of input. Normally you should not change it.
 	 *
@@ -208,7 +208,7 @@ public class XEditableComboDateOptions extends XEditableOptions<XEditableComboDa
 		this.template = tpl;
 		return this;
 	}
-
+	
 	/**
 	 * Format used for displaying date. Also applied when converting date from element's text on init. If not specified equals to format
 	 *
@@ -218,7 +218,7 @@ public class XEditableComboDateOptions extends XEditableOptions<XEditableComboDa
 	{
 		return viewFormat;
 	}
-
+	
 	/**
 	 * Format used for displaying date. Also applied when converting date from element's text on init. If not specified equals to format
 	 *
@@ -231,5 +231,5 @@ public class XEditableComboDateOptions extends XEditableOptions<XEditableComboDa
 		this.viewFormat = viewFormat;
 		return this;
 	}
-
+	
 }

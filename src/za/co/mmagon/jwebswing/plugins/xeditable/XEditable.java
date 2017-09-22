@@ -19,13 +19,13 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 public class XEditable<O extends XEditableOptions<O>>
 		extends Link<XEditable<O>>
 {
-
+	
 	private static final long serialVersionUID = 1L;
 	/**
 	 * The Feature for the items
 	 */
 	private XEditableFeature feature;
-
+	
 	/*
 	 * Constructs a new XEditable
 	 */
@@ -33,7 +33,7 @@ public class XEditable<O extends XEditableOptions<O>>
 	{
 		addAttribute(LinkAttributes.HRef, "#");
 	}
-
+	
 	/**
 	 * Constructs displaying a certain text
 	 *
@@ -44,7 +44,7 @@ public class XEditable<O extends XEditableOptions<O>>
 		this();
 		setText(displayedText);
 	}
-
+	
 	/**
 	 * Returns a feature never null
 	 *
@@ -58,7 +58,7 @@ public class XEditable<O extends XEditableOptions<O>>
 		}
 		return feature;
 	}
-
+	
 	/**
 	 * Sets the feature of this component
 	 *
@@ -71,11 +71,11 @@ public class XEditable<O extends XEditableOptions<O>>
 		this.feature = feature;
 		return this;
 	}
-
+	
 	@Override
 	public O getOptions()
 	{
 		return getFeature().getOptions();
 	}
-
+	
 }

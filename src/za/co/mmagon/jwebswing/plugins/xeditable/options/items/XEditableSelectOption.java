@@ -13,7 +13,7 @@ import java.util.List;
  */
 public class XEditableSelectOption extends JavaScriptPart
 {
-
+	
 	private static final long serialVersionUID = 1L;
 	/**
 	 * A value to identify the select option
@@ -30,7 +30,7 @@ public class XEditableSelectOption extends JavaScriptPart
 	 * <p>
 	 */
 	private List<XEditableSelectOption> children;
-
+	
 	/*
 	 * Constructs a new XEditableSelectOption
 	 */
@@ -38,7 +38,7 @@ public class XEditableSelectOption extends JavaScriptPart
 	{
 		//Nothing needed
 	}
-
+	
 	/**
 	 * Since 1.4.1 key children supported to render OPTGROUP (for select input only).
 	 * <p>
@@ -54,7 +54,7 @@ public class XEditableSelectOption extends JavaScriptPart
 		}
 		return children;
 	}
-
+	
 	/**
 	 * Since 1.4.1 key children supported to render OPTGROUP (for select input only).
 	 * <p>
@@ -69,7 +69,7 @@ public class XEditableSelectOption extends JavaScriptPart
 		this.children = children;
 		return this;
 	}
-
+	
 	/**
 	 * A value to identify the select option
 	 *
@@ -79,7 +79,7 @@ public class XEditableSelectOption extends JavaScriptPart
 	{
 		return value;
 	}
-
+	
 	/**
 	 * A value to identify the select option
 	 *
@@ -92,7 +92,7 @@ public class XEditableSelectOption extends JavaScriptPart
 		this.value = value;
 		return this;
 	}
-
+	
 	/**
 	 * The text to display, can be a component
 	 *
@@ -102,7 +102,7 @@ public class XEditableSelectOption extends JavaScriptPart
 	{
 		return text;
 	}
-
+	
 	/**
 	 * The text to display, can be a component
 	 *
@@ -115,5 +115,5 @@ public class XEditableSelectOption extends JavaScriptPart
 		this.text = text;
 		return this;
 	}
-
+	
 }
