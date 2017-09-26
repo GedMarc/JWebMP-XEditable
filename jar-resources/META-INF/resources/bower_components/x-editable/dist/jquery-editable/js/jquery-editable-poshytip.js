@@ -1852,10 +1852,10 @@
         * called when form was submitted
         */
         save: function (e, params) {
-            //mark element with unsaved class if needed
+            //mark element with un
             if (this.options.unsavedclass) {
                 /*
-                 Add unsaved css to element if:
+                 Add un
                   - url is not user's function 
                   - value was not sent to server
                   - params.response === undefined, that means data was not sent
@@ -1905,7 +1905,7 @@
              @param {Object} params.response ajax response
              @example
              $('#username').on('save', function(e, params) {
-                alert('Saved value: ' + params.newValue);
+                alert('
             });
              **/
             //event itself is triggered by editableContainer. Description here is only for documentation              

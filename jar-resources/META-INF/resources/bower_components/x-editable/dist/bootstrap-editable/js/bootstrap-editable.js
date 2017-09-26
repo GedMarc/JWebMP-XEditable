@@ -1852,10 +1852,10 @@
         * called when form was submitted
         */
         save: function (e, params) {
-            //mark element with unsaved class if needed
+            //mark element with un
             if (this.options.unsavedclass) {
                 /*
-                 Add unsaved css to element if:
+                 Add un
                   - url is not user's function
                   - value was not sent to server
                   - params.response === undefined, that means data was not sent
@@ -1905,7 +1905,7 @@
              @param {Object} params.response ajax response
              @example
              $('#username').on('save', function(e, params) {
-                alert('Saved value: ' + params.newValue);
+                alert('
             });
              **/
             //event itself is triggered by editableContainer. Description here is only for documentation
@@ -5071,7 +5071,7 @@ Editableform based on Twitter Bootstrap 2
             o.weekStart %= 7;
             o.weekEnd = ((o.weekStart + 6) % 7);
 
-            var format = DPGlobal.parseFormat(o.format)
+            var format = DPGlobal.parseFormat(o.format);
             if (o.startDate !== -Infinity) {
                 o.startDate = DPGlobal.parseDate(o.startDate, format, o.language);
             }
@@ -5899,7 +5899,7 @@ Editableform based on Twitter Bootstrap 2
         // Check if "de-DE" style date is available, if not language should
         // fallback to 2 letter code eg "de"
         if (!dates[lang]) {
-            lang = lang.split('-')[0]
+            lang = lang.split('-')[0];
             if (!dates[lang])
                 return;
         }
@@ -7044,7 +7044,7 @@ Editableform based on Twitter Bootstrap 2
         //add option to disable autoselect of first line
         //see https://github.com/twitter/bootstrap/pull/4164
         typeaheadSelect: function () {
-            var val = this.$menu.find('.active').data('item')
+            var val = this.$menu.find('.active').data('item');
             if (this.options.autoSelect || val) {
                 this.$element
                     .val(this.updater(val))
@@ -7058,24 +7058,24 @@ Editableform based on Twitter Bootstrap 2
          This patch fixes it.
         */
         typeaheadMove: function (e) {
-            if (!this.shown) return
+            if (!this.shown) return;
 
             switch (e.keyCode) {
                 case 9: // tab
                 case 13: // enter
                 case 27: // escape
-                    if (!this.$menu.find('.active').length) return
-                    e.preventDefault()
-                    break
+                    if (!this.$menu.find('.active').length) return;
+                    e.preventDefault();
+                    break;
 
                 case 38: // up arrow
-                    e.preventDefault()
-                    this.prev()
-                    break
+                    e.preventDefault();
+                    this.prev();
+                    break;
 
                 case 40: // down arrow
-                    e.preventDefault()
-                    this.next()
+                    e.preventDefault();
+                    this.next();
                     break
             }
 
