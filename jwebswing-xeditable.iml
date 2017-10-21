@@ -65,8 +65,4 @@
     <orderEntry type="module" module-name="jwebswing-easing-effects" />
     <orderEntry type="module" module-name="jwebswing-globalize" />
   </component>
-  <component name="sonarModuleSettings">
-    <option name="localAnalysisScripName" value="&lt;PROJECT&gt;" />
-    <option name="serverName" value="&lt;PROJECT&gt;" />
-  </component>
 </module>
