@@ -69,15 +69,7 @@ public enum XEditableDataTypes
 	/**
 	 * A new XEditableDataTypes
 	 */
-	private XEditableDataTypes()
-	{
-
-	}
-
-	/**
-	 * A new XEditableDataTypes with data
-	 */
-	private XEditableDataTypes(String data)
+	XEditableDataTypes()
 	{
 
 	}

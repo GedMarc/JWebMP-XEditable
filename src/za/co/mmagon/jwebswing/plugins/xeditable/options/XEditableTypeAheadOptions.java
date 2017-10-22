@@ -42,6 +42,7 @@ public class XEditableTypeAheadOptions
 	 */
 	public XEditableTypeAheadOptions()
 	{
+		//Nothing Needed
 	}
 
 	/**

@@ -15,19 +15,10 @@ public enum XEditableModes
 	/**
 	 * A new XEditableModes
 	 */
-	private XEditableModes()
+	XEditableModes()
 	{
 
 	}
-
-	/**
-	 * A new XEditableModes with data
-	 */
-	private XEditableModes(String data)
-	{
-
-	}
-
 	/**
 	 * Returns the name or the data contained within
 	 *

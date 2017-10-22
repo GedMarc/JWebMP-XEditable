@@ -9,21 +9,23 @@ import za.co.mmagon.jwebswing.generics.Positions;
 import za.co.mmagon.jwebswing.htmlbuilder.css.colours.ColourHexImpl;
 import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 
+import java.io.Serializable;
+
 /**
  * @param <O>
  *
  * @author Marc Magon
  * @since 13 Jun 2017
  */
-public class XEditableOptions<O extends XEditableOptions> extends JavaScriptPart
+public class XEditableOptions extends JavaScriptPart
 {
-	
+
 	private static final long serialVersionUID = 1L;
 	/**
 	 * Additional options for submit ajax request. List of values: http://api.jquery.com/jQuery.ajax
 	 */
-	private Object ajaxOptions;
-	
+	private Serializable ajaxOptions;
+
 	/**
 	 * Animation speed (inline mode only)
 	 */
@@ -43,7 +45,7 @@ public class XEditableOptions<O extends XEditableOptions> extends JavaScriptPart
 	 * Sets disabled state of editable
 	 */
 	private Boolean disabled;
-	
+
 	/**
 	 * Css class applied when editable text is empty.
 	 */
@@ -70,13 +72,13 @@ public class XEditableOptions<O extends XEditableOptions> extends JavaScriptPart
 	 * Placement of container relative to element. Can be top|right|bottom|left. Not used for inline container.
 	 */
 	private Positions placement;
-	
+
 	/**
 	 * Whether to save or cancel value when it was not changed but form was submitted
 	 */
 	@JsonProperty("savenochange")
 	private Boolean saveNoChange;
-	
+
 	/**
 	 * If selector is provided, editable will be delegated to the specified targets. Usefull for dynamically generated DOM elements. Please note, that delegated targets can't be initialized with
 	 * emptytext and autotext options, as they actually become editable only after first click. You should manually set class editable-click to these elements. Also, if element originally empty you
@@ -127,7 +129,7 @@ public class XEditableOptions<O extends XEditableOptions> extends JavaScriptPart
 	 */
 	@JsonProperty("unsavedclass")
 	private String unsavedClass;
-	
+
 	/**
 	 * Function for client-side validation. If returns string - means validation not passed and string showed as error.
 	 * <p>
@@ -151,7 +153,7 @@ public class XEditableOptions<O extends XEditableOptions> extends JavaScriptPart
 	 * <p>
 	 */
 	private String value;
-	
+
 	/*
 	 * Constructs a new XEditableOptions
 	 */
@@ -159,17 +161,17 @@ public class XEditableOptions<O extends XEditableOptions> extends JavaScriptPart
 	{
 		//Nothing needed
 	}
-	
+
 	/**
 	 * Additional options for submit ajax request. List of values: http://api.jquery.com/jQuery.ajax
 	 *
 	 * @return
 	 */
-	public Object getAjaxOptions()
+	public Serializable getAjaxOptions()
 	{
 		return ajaxOptions;
 	}
-	
+
 	/**
 	 * Additional options for submit ajax request. List of values: http://api.jquery.com/jQuery.ajax
 	 *
@@ -177,12 +179,12 @@ public class XEditableOptions<O extends XEditableOptions> extends JavaScriptPart
 	 *
 	 * @return
 	 */
-	public XEditableOptions setAjaxOptions(Object ajaxOptions)
+	public XEditableOptions setAjaxOptions(Serializable ajaxOptions)
 	{
 		this.ajaxOptions = ajaxOptions;
 		return this;
 	}
-	
+
 	/**
 	 * Animation speed (inline mode only)
 	 *
@@ -192,7 +194,7 @@ public class XEditableOptions<O extends XEditableOptions> extends JavaScriptPart
 	{
 		return animationSpeed;
 	}
-	
+
 	/**
 	 * Animation speed (inline mode only)
 	 *
@@ -205,7 +207,7 @@ public class XEditableOptions<O extends XEditableOptions> extends JavaScriptPart
 		this.animationSpeed = animationSpeed;
 		return this;
 	}
-	
+
 	/**
 	 * Allows to automatically set element's text based on it's value. Can be auto|always|never. Useful for select and date. For example, if dropdown list is {1: 'a', 2: 'b'} and element's value set
 	 * to 1, it's html will be automatically set to 'a'. auto - text will be automatically set only if element is empty. always|never - always(never) try to set element's text.
@@ -216,7 +218,7 @@ public class XEditableOptions<O extends XEditableOptions> extends JavaScriptPart
 	{
 		return autoText;
 	}
-	
+
 	/**
 	 * Allows to automatically set element's text based on it's value. Can be auto|always|never. Useful for select and date. For example, if dropdown list is {1: 'a', 2: 'b'} and element's value set
 	 * to 1, it's html will be automatically set to 'a'. auto - text will be automatically set only if element is empty. always|never - always(never) try to set element's text.
@@ -230,7 +232,7 @@ public class XEditableOptions<O extends XEditableOptions> extends JavaScriptPart
 		this.autoText = autoText;
 		return this;
 	}
-	
+
 	/**
 	 * Value that will be displayed in input if original field value is empty (null|undefined|'').
 	 *
@@ -240,7 +242,7 @@ public class XEditableOptions<O extends XEditableOptions> extends JavaScriptPart
 	{
 		return defaultValue;
 	}
-	
+
 	/**
 	 * Value that will be displayed in input if original field value is empty (null|undefined|'').
 	 *
@@ -253,7 +255,7 @@ public class XEditableOptions<O extends XEditableOptions> extends JavaScriptPart
 		this.defaultValue = defaultValue;
 		return this;
 	}
-	
+
 	/**
 	 * Sets disabled state of editable
 	 *
@@ -263,7 +265,7 @@ public class XEditableOptions<O extends XEditableOptions> extends JavaScriptPart
 	{
 		return disabled;
 	}
-	
+
 	/**
 	 * Sets disabled state of editable
 	 *
@@ -276,7 +278,7 @@ public class XEditableOptions<O extends XEditableOptions> extends JavaScriptPart
 		this.disabled = disabled;
 		return this;
 	}
-	
+
 	/**
 	 * CSS class applied when editable text is empty.
 	 *
@@ -286,7 +288,7 @@ public class XEditableOptions<O extends XEditableOptions> extends JavaScriptPart
 	{
 		return emptyClass;
 	}
-	
+
 	/**
 	 * CSS class applied when editable text is empty.
 	 *
@@ -299,7 +301,7 @@ public class XEditableOptions<O extends XEditableOptions> extends JavaScriptPart
 		this.emptyClass = emptyClass;
 		return this;
 	}
-	
+
 	/**
 	 * Text shown when element is empty.
 	 *
@@ -309,7 +311,7 @@ public class XEditableOptions<O extends XEditableOptions> extends JavaScriptPart
 	{
 		return emptyText;
 	}
-	
+
 	/**
 	 * Text shown when element is empty.
 	 *
@@ -322,7 +324,7 @@ public class XEditableOptions<O extends XEditableOptions> extends JavaScriptPart
 		this.emptyText = emptyText;
 		return this;
 	}
-	
+
 	/**
 	 * Color used to highlight element after update. Implemented via CSS3 transition, works in modern browsers.
 	 *
@@ -332,7 +334,7 @@ public class XEditableOptions<O extends XEditableOptions> extends JavaScriptPart
 	{
 		return highlight;
 	}
-	
+
 	/**
 	 * Color used to highlight element after update. Implemented via CSS3 transition, works in modern browsers.
 	 *
@@ -345,7 +347,7 @@ public class XEditableOptions<O extends XEditableOptions> extends JavaScriptPart
 		this.highlight = highlight;
 		return this;
 	}
-	
+
 	/**
 	 * Mode of editable, can be popup or inline
 	 *
@@ -355,7 +357,7 @@ public class XEditableOptions<O extends XEditableOptions> extends JavaScriptPart
 	{
 		return mode;
 	}
-	
+
 	/**
 	 * Mode of editable, can be popup or inline
 	 *
@@ -368,7 +370,7 @@ public class XEditableOptions<O extends XEditableOptions> extends JavaScriptPart
 		this.mode = mode;
 		return this;
 	}
-	
+
 	/**
 	 * Name of field. Will be submitted on server. Can be taken from id attribute
 	 *
@@ -378,7 +380,7 @@ public class XEditableOptions<O extends XEditableOptions> extends JavaScriptPart
 	{
 		return name;
 	}
-	
+
 	/**
 	 * Name of field. Will be submitted on server. Can be taken from id attribute
 	 *
@@ -391,7 +393,7 @@ public class XEditableOptions<O extends XEditableOptions> extends JavaScriptPart
 		this.name = name;
 		return this;
 	}
-	
+
 	/**
 	 * Placement of container relative to element. Can be top|right|bottom|left. Not used for inline container.
 	 *
@@ -401,7 +403,7 @@ public class XEditableOptions<O extends XEditableOptions> extends JavaScriptPart
 	{
 		return placement;
 	}
-	
+
 	/**
 	 * Placement of container relative to element. Can be top|right|bottom|left. Not used for inline container.
 	 *
@@ -414,7 +416,7 @@ public class XEditableOptions<O extends XEditableOptions> extends JavaScriptPart
 		this.placement = placement;
 		return this;
 	}
-	
+
 	/**
 	 * Whether to save or cancel value when it was not changed but form was submitted
 	 *
@@ -424,7 +426,7 @@ public class XEditableOptions<O extends XEditableOptions> extends JavaScriptPart
 	{
 		return saveNoChange;
 	}
-	
+
 	/**
 	 * Whether to save or cancel value when it was not changed but form was submitted
 	 *
@@ -437,7 +439,7 @@ public class XEditableOptions<O extends XEditableOptions> extends JavaScriptPart
 		this.saveNoChange = saveNoChange;
 		return this;
 	}
-	
+
 	/**
 	 * If selector is provided, editable will be delegated to the specified targets. Usefull for dynamically generated DOM elements. Please note, that delegated targets can't be initialized with
 	 * emptytext and autotext options, as they actually become editable only after first click. You should manually set class editable-click to these elements. Also, if element originally empty you
@@ -463,7 +465,7 @@ public class XEditableOptions<O extends XEditableOptions> extends JavaScriptPart
 	{
 		return selector;
 	}
-	
+
 	/**
 	 * If selector is provided, editable will be delegated to the specified targets. Usefull for dynamically generated DOM elements. Please note, that delegated targets can't be initialized with
 	 * emptytext and autotext options, as they actually become editable only after first click. You should manually set class editable-click to these elements. Also, if element originally empty you
@@ -492,7 +494,7 @@ public class XEditableOptions<O extends XEditableOptions> extends JavaScriptPart
 		this.selector = selector;
 		return this;
 	}
-	
+
 	/**
 	 * Strategy for sending data on server. Can be auto|always|never. When 'auto' data will be sent on server only if pk and url defined, otherwise new value will be stored locally.
 	 *
@@ -502,7 +504,7 @@ public class XEditableOptions<O extends XEditableOptions> extends JavaScriptPart
 	{
 		return send;
 	}
-	
+
 	/**
 	 * Strategy for sending data on server. Can be auto|always|never. When 'auto' data will be sent on server only if pk and url defined, otherwise new value will be stored locally.
 	 *
@@ -515,7 +517,7 @@ public class XEditableOptions<O extends XEditableOptions> extends JavaScriptPart
 		this.send = send;
 		return this;
 	}
-	
+
 	/**
 	 * Where to show buttons: left(true)|bottom|false Form without buttons is auto-submitted.
 	 *
@@ -525,7 +527,7 @@ public class XEditableOptions<O extends XEditableOptions> extends JavaScriptPart
 	{
 		return showButton;
 	}
-	
+
 	/**
 	 * Where to show buttons: left(true)|bottom|false Form without buttons is auto-submitted.
 	 *
@@ -538,7 +540,7 @@ public class XEditableOptions<O extends XEditableOptions> extends JavaScriptPart
 		this.showButton = showButton;
 		return this;
 	}
-	
+
 	/**
 	 * How to toggle editable. Can be click|dblclick|mouseenter|manual.
 	 * <p>
@@ -553,7 +555,7 @@ public class XEditableOptions<O extends XEditableOptions> extends JavaScriptPart
 	{
 		return toggle;
 	}
-	
+
 	/**
 	 * How to toggle editable. Can be click|dblclick|mouseenter|manual.
 	 * <p>
@@ -571,7 +573,7 @@ public class XEditableOptions<O extends XEditableOptions> extends JavaScriptPart
 		this.toggle = toggle;
 		return this;
 	}
-	
+
 	/**
 	 * There are several input types supported by library. Each type may have additional configuration options. Input options are defined as well as other parameters of $().editable() method.
 	 * Currently supported:
@@ -582,7 +584,7 @@ public class XEditableOptions<O extends XEditableOptions> extends JavaScriptPart
 	{
 		return type;
 	}
-	
+
 	/**
 	 * There are several input types supported by library. Each type may have additional configuration options. Input options are defined as well as other parameters of $().editable() method.
 	 * Currently supported:
@@ -596,7 +598,7 @@ public class XEditableOptions<O extends XEditableOptions> extends JavaScriptPart
 		this.type = type;
 		return this;
 	}
-	
+
 	/**
 	 * Css class applied when value was stored but not sent to server (pk is empty or send = 'never').
 	 * <p>
@@ -608,7 +610,7 @@ public class XEditableOptions<O extends XEditableOptions> extends JavaScriptPart
 	{
 		return unsavedClass;
 	}
-	
+
 	/**
 	 * Css class applied when value was stored but not sent to server (pk is empty or send = 'never').
 	 * <p>
@@ -623,18 +625,18 @@ public class XEditableOptions<O extends XEditableOptions> extends JavaScriptPart
 		this.unsavedClass = unsavedClass;
 		return this;
 	}
-	
+
 	@JsonProperty("validation")
 	@JsonRawValue
 	protected String getValidation()
 	{
 		return "function(value) {\n"
-				+ "    if($.trim(value) == '') {\n"
-				+ "        return '" + getValidationMessage() + "';\n"
-				+ "    }\n"
-				+ "}";
+				       + "    if($.trim(value) == '') {\n"
+				       + "        return '" + getValidationMessage() + "';\n"
+				       + "    }\n"
+				       + "}";
 	}
-	
+
 	/**
 	 * Function for client-side validation. If returns string - means validation not passed and string showed as error. Since 1.5.1 you can modify submitted value by returning object from validate:
 	 * {newValue: '...'} or {newValue: '...', msg: '...'}
@@ -648,7 +650,7 @@ public class XEditableOptions<O extends XEditableOptions> extends JavaScriptPart
 	{
 		return validationMessage;
 	}
-	
+
 	/**
 	 * Function for client-side validation. If returns string - means validation not passed and string showed as error. Since 1.5.1 you can modify submitted value by returning object from validate:
 	 * {newValue: '...'} or {newValue: '...', msg: '...'}
@@ -664,7 +666,7 @@ public class XEditableOptions<O extends XEditableOptions> extends JavaScriptPart
 		this.validationMessage = validationMessage;
 		return this;
 	}
-	
+
 	/**
 	 * Initial value of input. If not set, taken from element's text. Note, that if element's text is empty - text is automatically generated from value and can be customized (see autotext option).
 	 * For example, to display currency sign:
@@ -682,7 +684,7 @@ public class XEditableOptions<O extends XEditableOptions> extends JavaScriptPart
 	{
 		return value;
 	}
-	
+
 	/**
 	 * Initial value of input. If not set, taken from element's text. Note, that if element's text is empty - text is automatically generated from value and can be customized (see autotext option).
 	 * For example, to display currency sign:
@@ -703,5 +705,5 @@ public class XEditableOptions<O extends XEditableOptions> extends JavaScriptPart
 		this.value = value;
 		return this;
 	}
-	
+
 }
