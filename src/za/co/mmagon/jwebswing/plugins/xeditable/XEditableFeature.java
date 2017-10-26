@@ -9,7 +9,7 @@ import za.co.mmagon.jwebswing.base.html.Link;
  * @author Marc Magon
  * @since 13 Jun 2017
  */
-public class XEditableFeature<O extends XEditableOptions<O>>
+public class XEditableFeature<O extends XEditableOptions>
 		extends Feature<O, XEditableFeature<O>>
 {
 	

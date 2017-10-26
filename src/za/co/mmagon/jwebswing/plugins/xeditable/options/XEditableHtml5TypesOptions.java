@@ -10,7 +10,7 @@ import za.co.mmagon.jwebswing.plugins.xeditable.XEditableOptions;
  * @author Marc Magon
  * @since 13 Jun 2017
  */
-public class XEditableHtml5TypesOptions extends XEditableOptions<XEditableHtml5TypesOptions>
+public class XEditableHtml5TypesOptions extends XEditableOptions
 {
 
 	private static final long serialVersionUID = 1L;

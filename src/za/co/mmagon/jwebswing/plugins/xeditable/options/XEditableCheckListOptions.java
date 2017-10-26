@@ -14,7 +14,7 @@ import java.util.List;
  * @author Marc Magon
  * @since 13 Jun 2017
  */
-public class XEditableCheckListOptions extends XEditableOptions<XEditableCheckListOptions>
+public class XEditableCheckListOptions extends XEditableOptions
 {
 
 	private static final long serialVersionUID = 1L;

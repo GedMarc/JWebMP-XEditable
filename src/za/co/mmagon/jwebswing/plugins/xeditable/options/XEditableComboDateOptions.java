@@ -11,7 +11,7 @@ import za.co.mmagon.jwebswing.plugins.xeditable.options.items.ComboDateOptions;
  * @author Marc Magon
  * @since 13 Jun 2017
  */
-public class XEditableComboDateOptions extends XEditableOptions<XEditableComboDateOptions>
+public class XEditableComboDateOptions extends XEditableOptions
 {
 	
 	private static final long serialVersionUID = 1L;

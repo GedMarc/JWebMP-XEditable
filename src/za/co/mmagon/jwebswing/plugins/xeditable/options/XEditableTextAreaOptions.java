@@ -10,7 +10,7 @@ import za.co.mmagon.jwebswing.plugins.xeditable.XEditableOptions;
  * @author Marc Magon
  * @since 13 Jun 2017
  */
-public class XEditableTextAreaOptions extends XEditableOptions<XEditableTextAreaOptions>
+public class XEditableTextAreaOptions extends XEditableOptions
 {
 
 	private static final long serialVersionUID = 1L;
