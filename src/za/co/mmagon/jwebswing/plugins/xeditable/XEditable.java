@@ -4,6 +4,8 @@ import za.co.mmagon.jwebswing.base.html.Link;
 import za.co.mmagon.jwebswing.base.html.attributes.LinkAttributes;
 import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 
+import static za.co.mmagon.jwebswing.utilities.StaticStrings.STRING_HASH;
+
 /**
  * This library allows you to create editable elements on your page. It can be used with any engine (bootstrap, jquery-ui, jquery only) and includes both popup and inline modes. Please try out demo to
  * see how it works.
@@ -31,7 +33,7 @@ public class XEditable<O extends XEditableOptions>
 	 */
 	public XEditable()
 	{
-		addAttribute(LinkAttributes.HRef, "#");
+		addAttribute(LinkAttributes.HRef, STRING_HASH);
 	}
 
 	/**
