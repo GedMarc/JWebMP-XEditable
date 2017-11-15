@@ -52,6 +52,7 @@ public class XEditable<O extends XEditableOptions>
 	 *
 	 * @return
 	 */
+	@SuppressWarnings("unchecked")
 	public XEditableFeature<O> getFeature()
 	{
 		if (feature == null)
