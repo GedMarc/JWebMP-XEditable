@@ -58,7 +58,7 @@ public class ComboDateOptions extends JavaScriptPart
 	 */
 	private String customClass;
 	/**
-	 * Whether to round minutes and seconds if step > 1. E.g. if minuteStep = 5 date 2013-05-04 12:21 will be shown as 2013-05-04 12:20.*
+	 * Whether to round minutes and seconds if step greater than 1. E.g. if minuteStep = 5 date 2013-05-04 12:21 will be shown as 2013-05-04 12:20.*
 	 */
 	private Boolean roundTime;
 	/**
@@ -329,7 +329,7 @@ public class ComboDateOptions extends JavaScriptPart
 	}
 
 	/**
-	 * Whether to round minutes and seconds if step > 1. E.g. if minuteStep = 5 date 2013-05-04 12:21 will be shown as 2013-05-04 12:20.
+	 * Whether to round minutes and seconds if step greater than 1. E.g. if minuteStep = 5 date 2013-05-04 12:21 will be shown as 2013-05-04 12:20.
 	 *
 	 * @return
 	 */
@@ -339,7 +339,7 @@ public class ComboDateOptions extends JavaScriptPart
 	}
 
 	/**
-	 * Whether to round minutes and seconds if step > 1. E.g. if minuteStep = 5 date 2013-05-04 12:21 will be shown as 2013-05-04 12:20.
+	 * Whether to round minutes and seconds if step greater than 1. E.g. if minuteStep = 5 date 2013-05-04 12:21 will be shown as 2013-05-04 12:20.
 	 *
 	 * @param roundTime
 	 *
