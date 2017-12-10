@@ -12,7 +12,6 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
 import java.io.Serializable;
 
 /**
- * @param <O>
  *
  * @author Marc Magon
  * @since 13 Jun 2017
