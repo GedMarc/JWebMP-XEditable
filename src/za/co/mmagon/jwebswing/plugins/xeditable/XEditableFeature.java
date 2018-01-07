@@ -3,6 +3,8 @@ package za.co.mmagon.jwebswing.plugins.xeditable;
 import za.co.mmagon.jwebswing.Feature;
 import za.co.mmagon.jwebswing.base.html.Link;
 
+import static za.co.mmagon.jwebswing.utilities.StaticStrings.STRING_CLOSING_BRACKET_SEMICOLON;
+
 /**
  * @param <O>
  *
@@ -12,9 +14,9 @@ import za.co.mmagon.jwebswing.base.html.Link;
 public class XEditableFeature<O extends XEditableOptions>
 		extends Feature<O, XEditableFeature<O>>
 {
-	
+
 	private static final long serialVersionUID = 1L;
-	
+
 	/*
 	 * Constructs a new XEditableFeature
 	 */
@@ -22,13 +24,13 @@ public class XEditableFeature<O extends XEditableOptions>
 	{
 		super("xeditableFeature", editable);
 	}
-	
+
 	@Override
 	protected void assignFunctionsToComponent()
 	{
-		addQuery(getComponent().getJQueryID() + "editable(" + getOptions() + ");");
+		addQuery(getComponent().getJQueryID() + "editable(" + getOptions() + STRING_CLOSING_BRACKET_SEMICOLON);
 	}
-	
+
 	@Override
 	public O getOptions()
 	{
@@ -38,5 +40,5 @@ public class XEditableFeature<O extends XEditableOptions>
 		}
 		return super.getOptions();
 	}
-	
+
 }

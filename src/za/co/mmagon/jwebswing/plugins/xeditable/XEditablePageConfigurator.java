@@ -41,8 +41,8 @@ import za.co.mmagon.jwebswing.plugins.jquery.JQueryPageConfigurator;
 	{
 		if (!page.isConfigured())
 		{
-			JQueryPageConfigurator.setRequired(page.getBody(), true);
-			AngularPageConfigurator.setRequired(page.getBody(), true);
+			JQueryPageConfigurator.setRequired(true);
+			AngularPageConfigurator.setRequired(true);
 			page.getBody().addJavaScriptReference(XEditableReferencePool.XEditable.getJavaScriptReference());
 			page.getBody().addCssReference(XEditableReferencePool.XEditable.getCssReference());
 
