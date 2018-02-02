@@ -50,7 +50,7 @@ import za.co.mmagon.jwebswing.plugins.jquery.JQueryPageConfigurator;
 			page.getBody().addCssReference(XEditableReferencePool.XEditableTypeAhead.getCssReference());
 
 			page.getBody().addJavaScriptReference(XEditableReferencePool.XEditableTypeAheadJS.getJavaScriptReference());
-			page.getBody().addCssReference(XEditableReferencePool.XEditableTypeAheadJS.getCssReference());
+			//			page.getBody().addCssReference(XEditableReferencePool.XEditableTypeAheadJS.getCssReference());
 		}
 		return page;
 	}
