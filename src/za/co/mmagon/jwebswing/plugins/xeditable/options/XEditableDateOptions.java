@@ -1,7 +1,7 @@
 package za.co.mmagon.jwebswing.plugins.xeditable.options;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import za.co.mmagon.jwebswing.plugins.jqueryui.datepicker.JQUIDatePickerOptions;
+import za.co.mmagon.jwebswing.plugins.jqueryui.datepicker.options.JQUIDatePickerOptions;
 import za.co.mmagon.jwebswing.plugins.xeditable.XEditableDataTypes;
 import za.co.mmagon.jwebswing.plugins.xeditable.XEditableOptions;
 
