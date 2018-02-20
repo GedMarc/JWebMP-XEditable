@@ -7,7 +7,8 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 import static za.co.mmagon.jwebswing.utilities.StaticStrings.STRING_HASH;
 
 /**
- * This library allows you to create editable elements on your page. It can be used with any engine (bootstrap, jquery-ui, jquery only) and includes both popup and inline modes. Please try out demo to
+ * This library allows you to create editable elements on your page. It can be used with any engine (bootstrap, jquery-ui, jquery only)
+ * and includes both popup and inline modes. Please try out demo to
  * see how it works.
  *
  * @param <O>
@@ -18,8 +19,7 @@ import static za.co.mmagon.jwebswing.utilities.StaticStrings.STRING_HASH;
 @ComponentInformation(name = "XEditable Core Component",
 		description = "The core XEditable Components",
 		url = "https://vitalets.github.io/x-editable/docs.html")
-public class XEditable<O extends XEditableOptions>
-		extends Link<XEditable<O>>
+public class XEditable<O extends XEditableOptions> extends Link<XEditable<O>>
 {
 
 	private static final long serialVersionUID = 1L;
@@ -84,29 +84,12 @@ public class XEditable<O extends XEditableOptions>
 	@Override
 	public int hashCode()
 	{
-		int result = super.hashCode();
-		result = 31 * result + getFeature().hashCode();
-		return result;
+		return super.hashCode();
 	}
 
 	@Override
 	public boolean equals(Object o)
 	{
-		if (this == o)
-		{
-			return true;
-		}
-		if (!(o instanceof XEditable))
-		{
-			return false;
-		}
-		if (!super.equals(o))
-		{
-			return false;
-		}
-
-		XEditable<?> xEditable = (XEditable<?>) o;
-
-		return getFeature().equals(xEditable.getFeature());
+		return super.equals(o);
 	}
 }
