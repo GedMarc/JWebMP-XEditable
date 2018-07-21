@@ -17,7 +17,7 @@
 
 package com.jwebmp.plugins.xeditable.options.items;
 
-import com.jwebmp.htmlbuilder.javascript.JavaScriptPart;
+import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * Configuration of combodate. Full list of options: http://vitalets.github.com/combodate/#docs

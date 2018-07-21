@@ -17,11 +17,11 @@
 
 package com.jwebmp.plugins.xeditable;
 
-import com.jwebmp.base.html.Link;
-import com.jwebmp.base.html.attributes.LinkAttributes;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.html.Link;
+import com.jwebmp.core.base.html.attributes.LinkAttributes;
+import com.jwebmp.core.plugins.ComponentInformation;
 
-import static com.jwebmp.utilities.StaticStrings.*;
+import static com.jwebmp.core.utilities.StaticStrings.*;
 
 /**
  * This library allows you to create editable elements on your page. It can be used with any engine (bootstrap, jquery-ui, jquery only)

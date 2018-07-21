@@ -5,9 +5,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRawValue;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
-import com.jwebmp.generics.Positions;
-import com.jwebmp.htmlbuilder.css.colours.ColourHexImpl;
-import com.jwebmp.htmlbuilder.javascript.JavaScriptPart;
+import com.jwebmp.core.generics.Positions;
+import com.jwebmp.core.htmlbuilder.css.colours.ColourHexImpl;
+import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 import java.io.Serializable;
 

@@ -17,7 +17,7 @@
 
 package com.jwebmp.plugins.xeditable.components;
 
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.plugins.ComponentInformation;
 import com.jwebmp.plugins.xeditable.XEditable;
 import com.jwebmp.plugins.xeditable.options.XEditableTextOptions;
 

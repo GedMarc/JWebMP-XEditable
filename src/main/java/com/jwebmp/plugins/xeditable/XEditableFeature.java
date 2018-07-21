@@ -17,10 +17,10 @@
 
 package com.jwebmp.plugins.xeditable;
 
-import com.jwebmp.Feature;
-import com.jwebmp.base.html.Link;
+import com.jwebmp.core.Feature;
+import com.jwebmp.core.base.html.Link;
 
-import static com.jwebmp.utilities.StaticStrings.*;
+import static com.jwebmp.core.utilities.StaticStrings.*;
 
 /**
  * @param <O>

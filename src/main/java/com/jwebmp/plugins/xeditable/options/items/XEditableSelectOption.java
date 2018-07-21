@@ -17,7 +17,7 @@
 
 package com.jwebmp.plugins.xeditable.options.items;
 
-import com.jwebmp.htmlbuilder.javascript.JavaScriptPart;
+import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 import java.util.ArrayList;
 import java.util.List;
