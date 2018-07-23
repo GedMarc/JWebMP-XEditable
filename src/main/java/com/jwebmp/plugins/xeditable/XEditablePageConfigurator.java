@@ -1,10 +1,10 @@
 package com.jwebmp.plugins.xeditable;
 
 import com.jwebmp.core.Page;
-import com.jwebmp.core.PageConfigurator;
 import com.jwebmp.core.base.angular.AngularPageConfigurator;
 import com.jwebmp.core.plugins.PluginInformation;
 import com.jwebmp.core.plugins.jquery.JQueryPageConfigurator;
+import com.jwebmp.core.services.IPageConfigurator;
 
 /**
  * @author Marc Magon
@@ -24,7 +24,7 @@ import com.jwebmp.core.plugins.jquery.JQueryPageConfigurator;
 		pluginOriginalHomepage = "https://vitalets.github.io/x-editable/docs.html",
 		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/XEditable.jar/download"
 ) class XEditablePageConfigurator
-		extends PageConfigurator
+		implements IPageConfigurator
 {
 
 	private static final long serialVersionUID = 1L;
