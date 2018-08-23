@@ -19,6 +19,7 @@ package com.jwebmp.plugins.xeditable;
 
 import com.jwebmp.core.Feature;
 import com.jwebmp.core.base.html.Link;
+import com.jwebmp.core.base.html.interfaces.GlobalFeatures;
 
 import static com.jwebmp.core.utilities.StaticStrings.*;
 
@@ -29,7 +30,7 @@ import static com.jwebmp.core.utilities.StaticStrings.*;
  * @since 13 Jun 2017
  */
 public class XEditableFeature<O extends XEditableOptions>
-		extends Feature<O, XEditableFeature<O>>
+		extends Feature<GlobalFeatures, O, XEditableFeature<O>>
 {
 
 	private static final long serialVersionUID = 1L;
