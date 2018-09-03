@@ -25,11 +25,15 @@ import javax.validation.constraints.NotNull;
 		pluginIconImageUrl = "",
 		pluginOriginalHomepage = "https://vitalets.github.io/x-editable/docs.html",
 		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/XEditable.jar/download"
-) class XEditablePageConfigurator
+)
+public class XEditablePageConfigurator
 		implements IPageConfigurator
 {
-
 	private static final long serialVersionUID = 1L;
+	/**
+	 * If this configurator is enabled
+	 */
+	private static boolean enabled = true;
 
 	/*
 	 * Constructs a new XEditablePageConfigurator
@@ -37,6 +41,31 @@ import javax.validation.constraints.NotNull;
 	public XEditablePageConfigurator()
 	{
 		//Nothing needed
+	}
+
+	/**
+	 * Method isEnabled returns the enabled of this AngularAnimatedChangePageConfigurator object.
+	 * <p>
+	 * If this configurator is enabled
+	 *
+	 * @return the enabled (type boolean) of this AngularAnimatedChangePageConfigurator object.
+	 */
+	public static boolean isEnabled()
+	{
+		return XEditablePageConfigurator.enabled;
+	}
+
+	/**
+	 * Method setEnabled sets the enabled of this AngularAnimatedChangePageConfigurator object.
+	 * <p>
+	 * If this configurator is enabled
+	 *
+	 * @param mustEnable
+	 * 		the enabled of this AngularAnimatedChangePageConfigurator object.
+	 */
+	public static void setEnabled(boolean mustEnable)
+	{
+		XEditablePageConfigurator.enabled = mustEnable;
 	}
 
 	@NotNull
@@ -62,5 +91,11 @@ import javax.validation.constraints.NotNull;
 			    .addJavaScriptReference(XEditableReferencePool.XEditableTypeAheadJS.getJavaScriptReference());
 		}
 		return page;
+	}
+
+	@Override
+	public boolean enabled()
+	{
+		return XEditablePageConfigurator.enabled;
 	}
 }
