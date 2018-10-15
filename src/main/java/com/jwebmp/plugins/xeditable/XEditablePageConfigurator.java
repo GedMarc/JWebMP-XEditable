@@ -19,17 +19,16 @@ import javax.validation.constraints.NotNull;
 		pluginCategories = "xeditable,inline editing, direct editing, ui,web ui, framework",
 		pluginSubtitle = "This library allows you to create editable elements on your page. It can be used with any engine (bootstrap, jquery-ui, jquery only) and includes both popup and inline modes. Please try out demo to see how it works.",
 		pluginSourceUrl = "https://vitalets.github.io/x-editable/docs.html",
-		pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-XEditable/wiki",
-		pluginGitUrl = "https://github.com/GedMarc/JWebSwing-XEditable",
+		pluginWikiUrl = "https://github.com/GedMarc/JWebMP-XEditable/wiki",
+		pluginGitUrl = "https://github.com/GedMarc/JWebMP-XEditable",
 		pluginIconUrl = "",
 		pluginIconImageUrl = "",
 		pluginOriginalHomepage = "https://vitalets.github.io/x-editable/docs.html",
 		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/XEditable.jar/download"
 )
 public class XEditablePageConfigurator
-		implements IPageConfigurator
+		implements IPageConfigurator<XEditablePageConfigurator>
 {
-	private static final long serialVersionUID = 1L;
 	/**
 	 * If this configurator is enabled
 	 */
