@@ -31,7 +31,7 @@ public class XEditableTextAreaOptions
 		extends XEditableOptions
 {
 
-	private static final long serialVersionUID = 1L;
+
 	/**
 	 * If true - html will be escaped in content of element via $.text() method.
 	 * <p>
@@ -188,7 +188,7 @@ public class XEditableTextAreaOptions
 	 */
 	public XEditableTextAreaOptions setTpl(String tpl)
 	{
-		this.template = tpl;
+		template = tpl;
 		return this;
 	}
 }

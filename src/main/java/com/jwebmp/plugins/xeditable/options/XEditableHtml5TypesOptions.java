@@ -31,7 +31,6 @@ public class XEditableHtml5TypesOptions
 		extends XEditableOptions
 {
 
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * Whether to show clear button
@@ -195,7 +194,7 @@ public class XEditableHtml5TypesOptions
 	 */
 	public XEditableHtml5TypesOptions setTpl(String tpl)
 	{
-		this.template = tpl;
+		template = tpl;
 		return this;
 	}
 

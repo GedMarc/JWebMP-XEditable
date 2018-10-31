@@ -19,7 +19,7 @@ public class XEditableOptions
 		extends JavaScriptPart
 {
 
-	private static final long serialVersionUID = 1L;
+
 	/**
 	 * Additional options for submit ajax request. List of values: http://api.jquery.com/jQuery.ajax
 	 */

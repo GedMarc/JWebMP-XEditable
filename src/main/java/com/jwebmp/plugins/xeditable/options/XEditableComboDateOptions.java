@@ -32,7 +32,7 @@ public class XEditableComboDateOptions
 		extends XEditableOptions
 {
 
-	private static final long serialVersionUID = 1L;
+
 	/**
 	 * Text shown as clear date button. If false clear button will not be rendered.
 	 */
@@ -123,7 +123,7 @@ public class XEditableComboDateOptions
 	 */
 	public XEditableComboDateOptions setDatepicker(ComboDateOptions datepicker)
 	{
-		this.comboDate = datepicker;
+		comboDate = datepicker;
 		return this;
 	}
 
@@ -223,7 +223,7 @@ public class XEditableComboDateOptions
 	 */
 	public XEditableComboDateOptions setTpl(String tpl)
 	{
-		this.template = tpl;
+		template = tpl;
 		return this;
 	}
 

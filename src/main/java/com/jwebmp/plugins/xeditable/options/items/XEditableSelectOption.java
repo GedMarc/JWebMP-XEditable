@@ -32,7 +32,7 @@ public class XEditableSelectOption
 		extends JavaScriptPart
 {
 
-	private static final long serialVersionUID = 1L;
+
 	/**
 	 * A value to identify the select option
 	 */

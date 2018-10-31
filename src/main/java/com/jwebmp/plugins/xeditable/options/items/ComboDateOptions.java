@@ -29,7 +29,6 @@ public class ComboDateOptions
 		extends JavaScriptPart
 {
 
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * In this format date is stored in original input. List of tokens.*

@@ -32,7 +32,7 @@ public class XEditableDateOptions
 		extends XEditableOptions
 {
 
-	private static final long serialVersionUID = 1L;
+
 	/**
 	 * Text shown as clear date button. If false clear button will not be rendered.
 	 */
@@ -222,7 +222,7 @@ public class XEditableDateOptions
 	 */
 	public XEditableDateOptions setTpl(String tpl)
 	{
-		this.template = tpl;
+		template = tpl;
 		return this;
 	}
 

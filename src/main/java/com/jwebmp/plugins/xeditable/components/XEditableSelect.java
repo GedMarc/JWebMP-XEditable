@@ -38,7 +38,6 @@ public class XEditableSelect
 		extends XEditable<XEditableSelectOptions>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	/*
 	 * Constructs a new XEditableText

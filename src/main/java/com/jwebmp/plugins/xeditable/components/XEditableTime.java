@@ -39,7 +39,6 @@ public class XEditableTime
 		extends XEditable<XEditableHtml5TypesOptions>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	/*
 	 * Constructs a new XEditableText

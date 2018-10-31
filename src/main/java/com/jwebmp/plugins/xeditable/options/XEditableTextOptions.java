@@ -31,7 +31,6 @@ public class XEditableTextOptions
 		extends XEditableOptions
 {
 
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * Whether to show clear button
@@ -188,7 +187,7 @@ public class XEditableTextOptions
 	 */
 	public XEditableTextOptions setTpl(String tpl)
 	{
-		this.template = tpl;
+		template = tpl;
 		return this;
 	}
 

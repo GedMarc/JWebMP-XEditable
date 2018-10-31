@@ -33,7 +33,6 @@ public class XEditableFeature<O extends XEditableOptions>
 		extends Feature<GlobalFeatures, O, XEditableFeature<O>>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	/*
 	 * Constructs a new XEditableFeature

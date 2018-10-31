@@ -21,7 +21,6 @@ public class XEditableComboDate
 		extends XEditable<XEditableComboDateOptions>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	/*
 	 * Constructs a new XEditableText
