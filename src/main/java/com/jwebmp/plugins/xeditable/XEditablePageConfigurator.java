@@ -1,7 +1,6 @@
 package com.jwebmp.plugins.xeditable;
 
 import com.jwebmp.core.Page;
-import com.jwebmp.core.base.angular.AngularPageConfigurator;
 import com.jwebmp.core.plugins.PluginInformation;
 import com.jwebmp.core.plugins.jquery.JQueryPageConfigurator;
 import com.jwebmp.core.services.IPageConfigurator;
@@ -74,7 +73,6 @@ public class XEditablePageConfigurator
 		if (!page.isConfigured())
 		{
 			JQueryPageConfigurator.setRequired(true);
-			AngularPageConfigurator.setRequired(true);
 
 			page.getBody()
 			    .addJavaScriptReference(XEditableReferencePool.XEditable.getJavaScriptReference());
