@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 Marc Magon
+ * Copyright (C) 2017 GedMarc
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,7 +20,7 @@ package com.jwebmp.plugins.xeditable.options;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
- * @author Marc Magon
+ * @author GedMarc
  * @since 13 Jun 2017
  */
 public class XEditableTypeAheadOptions

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 Marc Magon
+ * Copyright (C) 2017 GedMarc
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -28,7 +28,7 @@ import com.jwebmp.plugins.xeditable.options.XEditableTextOptions;
  * Please try out demo to
  * see how it works.
  *
- * @author Marc Magon
+ * @author GedMarc
  * @since 13 Jun 2017
  */
 @ComponentInformation(name = "XEditable Text Component",

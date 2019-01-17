@@ -1,7 +1,7 @@
 package com.jwebmp.plugins.xeditable;
 
 /**
- * @author Marc Magon
+ * @author GedMarc
  * @since 13 Jun 2017
  */
 public enum XEditableDataTypes

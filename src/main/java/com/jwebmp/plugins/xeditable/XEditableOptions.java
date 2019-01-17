@@ -12,7 +12,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 import java.io.Serializable;
 
 /**
- * @author Marc Magon
+ * @author GedMarc
  * @since 13 Jun 2017
  */
 public class XEditableOptions

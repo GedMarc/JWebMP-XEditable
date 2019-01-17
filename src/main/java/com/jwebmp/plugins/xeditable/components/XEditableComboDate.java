@@ -11,7 +11,7 @@ import com.jwebmp.plugins.xeditable.options.XEditableComboDateOptions;
  * Please try out demo to
  * see how it works.
  *
- * @author Marc Magon
+ * @author GedMarc
  * @since 13 Jun 2017
  */
 @ComponentInformation(name = "XEditable Combo Date Component",
