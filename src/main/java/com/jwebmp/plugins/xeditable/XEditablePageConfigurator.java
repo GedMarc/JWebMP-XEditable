@@ -70,7 +70,7 @@ public class XEditablePageConfigurator
 	@Override
 	public Page configure(Page page)
 	{
-		if (!page.isConfigured())
+		if (!page.isConfigured() && enabled())
 		{
 			JQueryPageConfigurator.setRequired(true);
 
