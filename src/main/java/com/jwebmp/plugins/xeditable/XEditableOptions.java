@@ -15,8 +15,8 @@ import java.io.Serializable;
  * @author GedMarc
  * @since 13 Jun 2017
  */
-public class XEditableOptions
-		extends JavaScriptPart
+public class XEditableOptions<J extends XEditableOptions<J>>
+		extends JavaScriptPart<J>
 {
 
 
