@@ -6,8 +6,8 @@ module com.jwebmp.plugins.xeditable {
 	exports com.jwebmp.plugins.xeditable.components;
 
 	provides com.jwebmp.core.services.IPageConfigurator with com.jwebmp.plugins.xeditable.XEditablePageConfigurator;
-	provides com.jwebmp.guicedinjection.interfaces.IGuiceScanModuleExclusions with com.jwebmp.plugins.xeditable.implementations.XEditableExclusionsModule;
-	provides com.jwebmp.guicedinjection.interfaces.IGuiceScanJarExclusions with com.jwebmp.plugins.xeditable.implementations.XEditableExclusionsModule;
+	provides com.guicedee.guicedinjection.interfaces.IGuiceScanModuleExclusions with com.jwebmp.plugins.xeditable.implementations.XEditableExclusionsModule;
+	provides com.guicedee.guicedinjection.interfaces.IGuiceScanJarExclusions with com.jwebmp.plugins.xeditable.implementations.XEditableExclusionsModule;
 
 	requires com.jwebmp.core;
 	requires transitive com.fasterxml.jackson.annotation;
@@ -15,7 +15,7 @@ module com.jwebmp.plugins.xeditable {
 	requires java.logging;
 	requires com.jwebmp.plugins.jqueryui;
 	requires java.validation;
-	requires com.jwebmp.guicedinjection;
+	requires com.guicedee.guicedinjection;
 	requires com.fasterxml.jackson.databind;
 
 	opens com.jwebmp.plugins.xeditable to com.fasterxml.jackson.databind, com.jwebmp.core;
