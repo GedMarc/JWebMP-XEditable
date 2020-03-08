@@ -7,7 +7,6 @@ module com.jwebmp.plugins.xeditable {
 
 	provides com.jwebmp.core.services.IPageConfigurator with com.jwebmp.plugins.xeditable.XEditablePageConfigurator;
 	provides com.guicedee.guicedinjection.interfaces.IGuiceScanModuleExclusions with com.jwebmp.plugins.xeditable.implementations.XEditableExclusionsModule;
-	provides com.guicedee.guicedinjection.interfaces.IGuiceScanJarExclusions with com.jwebmp.plugins.xeditable.implementations.XEditableExclusionsModule;
 
 	requires com.jwebmp.core;
 	requires transitive com.fasterxml.jackson.annotation;
