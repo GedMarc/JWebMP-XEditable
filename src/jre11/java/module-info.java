@@ -9,7 +9,6 @@ module com.jwebmp.plugins.xeditable {
 	provides com.guicedee.guicedinjection.interfaces.IGuiceScanModuleExclusions with com.jwebmp.plugins.xeditable.implementations.XEditableExclusionsModule;
 
 	requires com.jwebmp.core;
-	requires transitive com.fasterxml.jackson.annotation;
 
 	requires java.logging;
 	requires com.jwebmp.plugins.jqueryui;
