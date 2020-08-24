@@ -21,6 +21,7 @@ import com.jwebmp.core.base.html.Link;
 import com.jwebmp.core.base.html.attributes.LinkAttributes;
 import com.jwebmp.core.plugins.ComponentInformation;
 
+import static com.guicedee.guicedinjection.json.StaticStrings.STRING_HASH;
 import static com.jwebmp.core.utilities.StaticStrings.*;
 
 /**

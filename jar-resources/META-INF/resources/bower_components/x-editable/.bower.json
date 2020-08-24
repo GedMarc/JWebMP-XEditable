@@ -1,15 +1,6 @@
 {
   "name": "x-editable",
-  "main": [
-    "./dist/bootstrap3-editable/css/bootstrap-editable.css",
-    "./dist/bootstrap3-editable/js/bootstrap-editable.min.js",
-    "./dist/bootstrap-editable/css/bootstrap-editable.css",
-    "./dist/bootstrap-editable/js/bootstrap-editable.min.js",
-    "./dist/jqueryui-editable/css/jqueryui-editable.css",
-    "./dist/jqueryui-editable/js/jqueryui-editable.min.js",
-    "./dist/jquery-editable/css/jquery-editable.css",
-    "./dist/jquery-editable/js/jquery-editable-poshytip.min.js"
-  ],
+  "version": "1.5.1",
   "ignore": [
     "CHANGELOG.txt",
     "Gruntfile.js",
@@ -27,12 +18,13 @@
     "jquery": ">=1.6"
   },
   "homepage": "https://github.com/vitalets/x-editable",
-  "_release": "d66840a",
+  "_release": "1.5.1",
   "_resolution": {
-    "type": "commit",
-    "commit": "d66840a"
+    "type": "version",
+    "tag": "1.5.1",
+    "commit": "f32802f48a33b8a7ec9cca32eec4ca844b7d39b2"
   },
   "_source": "https://github.com/vitalets/x-editable.git",
-  "_target": "d66840a",
+  "_target": "*",
   "_originalSource": "x-editable"
 }
