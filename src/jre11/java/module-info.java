@@ -12,7 +12,7 @@ module com.jwebmp.plugins.xeditable {
 
 	requires java.logging;
 	requires com.jwebmp.plugins.jqueryui;
-	requires java.validation;
+	requires jakarta.validation;
 	requires com.guicedee.guicedinjection;
 	requires com.fasterxml.jackson.databind;
 
