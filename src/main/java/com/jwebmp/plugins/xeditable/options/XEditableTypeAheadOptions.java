@@ -18,12 +18,14 @@
 package com.jwebmp.plugins.xeditable.options;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * @author GedMarc
  * @since 13 Jun 2017
  */
 public class XEditableTypeAheadOptions
+		extends JavaScriptPart<XEditableTypeAheadOptions>
 {
 
 	/**

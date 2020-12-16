@@ -28,7 +28,7 @@ import com.jwebmp.plugins.xeditable.XEditableOptions;
  * @since 13 Jun 2017
  */
 public class XEditableTextAreaOptions
-		extends XEditableOptions
+		extends XEditableOptions<XEditableTextAreaOptions>
 {
 
 

@@ -28,7 +28,7 @@ import com.jwebmp.plugins.xeditable.XEditableOptions;
  * @since 13 Jun 2017
  */
 public class XEditableHtml5TypesOptions
-		extends XEditableOptions
+		extends XEditableOptions<XEditableHtml5TypesOptions>
 {
 
 

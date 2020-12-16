@@ -2,6 +2,7 @@ package com.jwebmp.plugins.xeditable;
 
 import com.jwebmp.core.Page;
 import com.jwebmp.core.plugins.PluginInformation;
+import com.jwebmp.core.plugins.PluginStatus;
 import com.jwebmp.core.plugins.jquery.JQueryPageConfigurator;
 import com.jwebmp.core.services.IPageConfigurator;
 
@@ -23,7 +24,13 @@ import jakarta.validation.constraints.NotNull;
 		pluginIconUrl = "",
 		pluginIconImageUrl = "",
 		pluginOriginalHomepage = "https://vitalets.github.io/x-editable/docs.html",
-		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/XEditable.jar/download"
+		pluginDownloadUrl = "https://mvnrepository.com/artifact/com.jwebmp.plugins.forms/jwebmp-xeditable",
+		pluginGroupId = "com.jwebmp.plugins.forms",
+		pluginArtifactId = "jwebmp-xeditable",
+		pluginModuleName = "com.jwebmp.plugins.xeditable",
+		pluginStatus = PluginStatus.Released
+		
+
 )
 public class XEditablePageConfigurator
 		implements IPageConfigurator<XEditablePageConfigurator>
@@ -32,7 +39,7 @@ public class XEditablePageConfigurator
 	 * If this configurator is enabled
 	 */
 	private static boolean enabled = true;
-
+	
 	/*
 	 * Constructs a new XEditablePageConfigurator
 	 */
@@ -40,7 +47,7 @@ public class XEditablePageConfigurator
 	{
 		//Nothing needed
 	}
-
+	
 	/**
 	 * Method isEnabled returns the enabled of this AngularAnimatedChangePageConfigurator object.
 	 * <p>
@@ -52,20 +59,19 @@ public class XEditablePageConfigurator
 	{
 		return XEditablePageConfigurator.enabled;
 	}
-
+	
 	/**
 	 * Method setEnabled sets the enabled of this AngularAnimatedChangePageConfigurator object.
 	 * <p>
 	 * If this configurator is enabled
 	 *
-	 * @param mustEnable
-	 * 		the enabled of this AngularAnimatedChangePageConfigurator object.
+	 * @param mustEnable the enabled of this AngularAnimatedChangePageConfigurator object.
 	 */
 	public static void setEnabled(boolean mustEnable)
 	{
 		XEditablePageConfigurator.enabled = mustEnable;
 	}
-
+	
 	@NotNull
 	@Override
 	public Page configure(Page page)
@@ -73,23 +79,23 @@ public class XEditablePageConfigurator
 		if (!page.isConfigured() && enabled())
 		{
 			JQueryPageConfigurator.setRequired(true);
-
+			
 			page.getBody()
 			    .addJavaScriptReference(XEditableReferencePool.XEditable.getJavaScriptReference());
 			page.getBody()
 			    .addCssReference(XEditableReferencePool.XEditable.getCssReference());
-
+			
 			page.getBody()
 			    .addJavaScriptReference(XEditableReferencePool.XEditableTypeAhead.getJavaScriptReference());
 			page.getBody()
 			    .addCssReference(XEditableReferencePool.XEditableTypeAhead.getCssReference());
-
+			
 			page.getBody()
 			    .addJavaScriptReference(XEditableReferencePool.XEditableTypeAheadJS.getJavaScriptReference());
 		}
 		return page;
 	}
-
+	
 	@Override
 	public boolean enabled()
 	{

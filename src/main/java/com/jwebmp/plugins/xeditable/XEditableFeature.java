@@ -26,15 +26,14 @@ import static com.jwebmp.core.utilities.StaticStrings.*;
 
 /**
  * @param <O>
- *
  * @author GedMarc
  * @since 13 Jun 2017
  */
-public class XEditableFeature<O extends XEditableOptions>
+public class XEditableFeature<O extends XEditableOptions<?>>
 		extends Feature<GlobalFeatures, O, XEditableFeature<O>>
 {
-
-
+	
+	
 	/*
 	 * Constructs a new XEditableFeature
 	 */
@@ -42,13 +41,14 @@ public class XEditableFeature<O extends XEditableOptions>
 	{
 		super("xeditableFeature", editable);
 	}
-
+	
 	@Override
 	protected void assignFunctionsToComponent()
 	{
-		addQuery(getComponent().getJQueryID() + "editable(" + getOptions() + STRING_CLOSING_BRACKET_SEMICOLON);
+		addQuery(getComponent().asBase()
+		                       .getJQueryID() + "editable(" + getOptions() + STRING_CLOSING_BRACKET_SEMICOLON);
 	}
-
+	
 	@Override
 	public O getOptions()
 	{
@@ -58,5 +58,5 @@ public class XEditableFeature<O extends XEditableOptions>
 		}
 		return super.getOptions();
 	}
-
+	
 }

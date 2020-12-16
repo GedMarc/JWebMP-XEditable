@@ -26,7 +26,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
  * @since 13 Jun 2017
  */
 public class ComboDateOptions
-		extends JavaScriptPart
+		extends JavaScriptPart<ComboDateOptions>
 {
 
 

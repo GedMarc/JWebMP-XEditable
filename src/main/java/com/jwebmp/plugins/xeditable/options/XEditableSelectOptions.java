@@ -32,7 +32,7 @@ import java.util.List;
  * @since 13 Jun 2017
  */
 public class XEditableSelectOptions
-		extends XEditableOptions
+		extends XEditableOptions<XEditableSelectOptions>
 {
 
 

@@ -32,7 +32,7 @@ import java.util.List;
  * @since 13 Jun 2017
  */
 public class XEditableCheckListOptions
-		extends XEditableOptions
+		extends XEditableOptions<XEditableCheckListOptions>
 {
 
 

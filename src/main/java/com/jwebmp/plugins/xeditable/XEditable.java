@@ -37,7 +37,7 @@ import static com.jwebmp.core.utilities.StaticStrings.*;
 @ComponentInformation(name = "XEditable Core Component",
 		description = "The core XEditable Components",
 		url = "https://vitalets.github.io/x-editable/docs.html")
-public class XEditable<O extends XEditableOptions>
+public class XEditable<O extends XEditableOptions<?>>
 		extends Link<XEditable<O>>
 {
 

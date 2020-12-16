@@ -29,7 +29,7 @@ import com.jwebmp.plugins.xeditable.options.items.ComboDateOptions;
  * @since 13 Jun 2017
  */
 public class XEditableComboDateOptions
-		extends XEditableOptions
+		extends XEditableOptions<XEditableComboDateOptions>
 {
 
 
