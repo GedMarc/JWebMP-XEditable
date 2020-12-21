@@ -14,7 +14,7 @@ import jakarta.validation.constraints.NotNull;
  */
 @PluginInformation(pluginName = "XEditable",
 		pluginDescription = "This library allows you to create editable elements on your page. It can be used with any engine (bootstrap, jquery-ui, jquery only) and includes both popup and inline modes. Please try out demo to see how it works.",
-		pluginUniqueName = "jwebswing-xeditable",
+		pluginUniqueName = "xeditable",
 		pluginVersion = "1.6.4",
 		pluginCategories = "xeditable,inline editing, direct editing, ui,web ui, framework",
 		pluginSubtitle = "This library allows you to create editable elements on your page. It can be used with any engine (bootstrap, jquery-ui, jquery only) and includes both popup and inline modes. Please try out demo to see how it works.",
