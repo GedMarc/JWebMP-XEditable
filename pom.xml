@@ -12,7 +12,7 @@
 
     <artifactId>jwebmp-xeditable</artifactId>
     <packaging>jar</packaging>
-
+    <version>0.0.0_0-SNAPSHOT</version>
     <name>XEditable</name>
     <description>The JWebSwing implementation for a XEditable</description>
     <url>https://github.com/GedMarc/JWebSwing-XEditable</url>
